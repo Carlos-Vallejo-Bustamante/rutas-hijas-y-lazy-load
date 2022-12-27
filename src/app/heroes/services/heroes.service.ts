@@ -9,10 +9,16 @@ import { Heroe } from '../interfaces/heroes.interface';
 })
 export class HeroesService {
 
+  baseUrl: string = 'http://localhost:3000/heroes';
+
   constructor(private http: HttpClient) { }
 
   getHeroes(): Observable<Heroe[]> {
-    return this.http.get<Heroe[]>('http://localhost:3000/heroes')
+    return this.http.get<Heroe[]>(this.baseUrl)
+  }
+
+  getHeroeId(id: string): Observable<Heroe[]> {
+    return this.http.get<Heroe[]>(`${this.baseUrl}/${id}`)
   }
 
 }

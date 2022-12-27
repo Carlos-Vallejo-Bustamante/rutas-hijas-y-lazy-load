@@ -16,7 +16,15 @@
           </mat-card-content>
         
           <mat-card-actions>
-            <button mat-stroked-button color="warn">Leer más...</button>
-            <button mat-stroked-button color="accent">Editar</button>
+            <button mat-stroked-button
+                    color="warn"
+                    [routerLink]="['/heroes', heroe.id]">
+            Leer más...
+          </button>
+            <button mat-stroked-button
+                    color="accent"
+                    [routerLink]="['/heroes/editar', heroe.id]">
+            Editar
+          </button>
           </mat-card-actions>
         </mat-card>

@@ -1,1 +1,31 @@
-<p>heroe works!</p>
+<mat-grid-list cols="1" *ngIf="!heroe; else elseTemplate">
+    <mat-grid-tile>
+        <mat-spinner></mat-spinner>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<ng-template #elseTemplate>
+    <mat-card class="example-card">
+        <mat-card-title-group>
+          <mat-card-title>{{heroe.superhero}} - {{heroe.alter_ego}}</mat-card-title>
+          <mat-card-subtitle>{{heroe.publisher}}</mat-card-subtitle>
+          <img mat-card-xl-image [src]="heroe | imagen" >
+        </mat-card-title-group>
+        <mat-card-content>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Aspernatur numquam, repellat earum ullam laboriosam voluptas magnam exercitationem perferendis natus a nemo possimus maxime eum nesciunt repudiandae vel molestiae eaque sit!
+          </p>
+        </mat-card-content>
+        <mat-card-content>
+          {{heroe.first_appearance}}
+        </mat-card-content>
+        <button mat-stroked-button
+                color="warn"
+                (click)="regresar()">
+            Leer más...
+        </button>
+    </mat-card>
+</ng-template>
+
+
