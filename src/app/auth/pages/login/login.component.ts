@@ -20,12 +20,14 @@ export class LoginComponent {
         console.log(res)
 
         if (res.id) {
-          this.router.navigate(['/heroes/listado'])
+          this.router.navigate(['/heroes'])
         }
+      })
+  }
 
-      }
-      )
-
+  ingresarSinLogin() {
+    this.authService.logout();
+    this.router.navigate(['/heroes'])
   }
 
 }

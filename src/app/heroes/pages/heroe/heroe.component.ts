@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HeroesService } from '../../services/heroes.service';
 import { Heroe } from '../../interfaces/heroes.interface';
-import { switchMap, tap } from 'rxjs';
+import { switchMap } from 'rxjs';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-heroe',
