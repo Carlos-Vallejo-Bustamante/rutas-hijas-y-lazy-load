@@ -14,7 +14,7 @@ export class BuscarComponent implements OnInit {
   busqueda: string = '';
 
   heroes: Heroe[] = [];
-  heroeSeleccionado: Heroe[] | undefined;
+  heroeSeleccionado: Heroe | undefined;
 
 
   constructor(private heroesService: HeroesService) { }

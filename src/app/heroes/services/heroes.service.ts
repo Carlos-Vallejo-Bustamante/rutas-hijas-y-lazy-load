@@ -18,12 +18,20 @@ export class HeroesService {
     return this.http.get<Heroe[]>(`${this.baseUrl}/heroes`)
   }
 
-  getHeroeId(id: string): Observable<Heroe[]> {
-    return this.http.get<Heroe[]>(`${this.baseUrl}/heroes/${id}`)
+  getHeroeId(id: string): Observable<Heroe> {
+    return this.http.get<Heroe>(`${this.baseUrl}/heroes/${id}`)
   }
 
   getSugerencias(busqueda: string): Observable<Heroe[]> {
     return this.http.get<Heroe[]>(`${this.baseUrl}/heroes?q=${busqueda}&_limit=6`)
+  }
+
+  agregarHeroe(heroe: Heroe): Observable<Heroe> {
+    return this.http.post<Heroe>(`${this.baseUrl}/heroes`, heroe);
+  }
+
+  actualizarHeroe(heroe: Heroe): Observable<Heroe> {
+    return this.http.put<Heroe>(`${this.baseUrl}/heroes/${heroe.id}`, heroe);
   }
 
 }
