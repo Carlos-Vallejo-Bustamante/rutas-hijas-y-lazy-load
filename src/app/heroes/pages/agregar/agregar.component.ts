@@ -66,14 +66,13 @@ export class AgregarComponent implements OnInit {
 
     if (this.heroe.id) {
       this.heroeService.actualizarHeroe(this.heroe)
-        .subscribe(heroe => console.log('Actualizando')
-        )
+        .subscribe(heroe => this.mostrarSnackbar('Registro actualizado'));
     } else {
       this.heroeService.agregarHeroe(this.heroe)
         .subscribe(heroe => {
           this.router.navigate(['/heroes/editar', heroe.id]);
-        }
-        )
+          this.mostrarSnackbar('Registro creado')
+        })
     }
   }
 
@@ -83,6 +82,13 @@ export class AgregarComponent implements OnInit {
       .subscribe(res => {
         this.router.navigate(['heroes']);
       })
+  }
+
+  mostrarSnackbar(mensaje: string) {
+
+    this.snackBar.open(mensaje, 'Ok!', {
+      duration: 2500
+    });
   }
 
 }
