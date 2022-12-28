@@ -1,0 +1,705 @@
+{
+	"info": {
+		"_postman_id": "4e4ed7a8-7f19-42ae-8016-65a023dd063e",
+		"name": "Heroes App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23214538"
+	},
+	"item": [
+		{
+			"name": "Heroes",
+			"item": [
+				{
+					"name": "Lista heroes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/heroes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"heroes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/heroes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"heroes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"111c-e/NOAFN5y2aybY1HBS2bjY366Hc\""
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Dec 2022 23:18:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"dc-batman\",\n        \"superhero\": \"Batman\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Bruce Wayne\",\n        \"first_appearance\": \"Detective Comics #27\",\n        \"characters\": \"Bruce Wayne\"\n    },\n    {\n        \"id\": \"dc-superman\",\n        \"superhero\": \"Superman\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Kal-El\",\n        \"first_appearance\": \"Action Comics #1\",\n        \"characters\": \"Kal-El\"\n    },\n    {\n        \"id\": \"dc-flash\",\n        \"superhero\": \"Flash\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Jay Garrick\",\n        \"first_appearance\": \"Flash Comics #1\",\n        \"characters\": \"Jay Garrick, Barry Allen, Wally West, Bart Allen\"\n    },\n    {\n        \"id\": \"dc-green\",\n        \"superhero\": \"Green Lantern\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Alan Scott\",\n        \"first_appearance\": \"All-American Comics #16\",\n        \"characters\": \"Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz\"\n    },\n    {\n        \"id\": \"dc-arrow\",\n        \"superhero\": \"Green Arrow\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Oliver Queen\",\n        \"first_appearance\": \"More Fun Comics #73\",\n        \"characters\": \"Oliver Queen\"\n    },\n    {\n        \"id\": \"dc-wonder\",\n        \"superhero\": \"Wonder Woman\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Princess Diana\",\n        \"first_appearance\": \"All Star Comics #8\",\n        \"characters\": \"Princess Diana\"\n    },\n    {\n        \"id\": \"dc-martian\",\n        \"superhero\": \"Martian Manhunter\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"J\\\"onn J\\\"onzz\",\n        \"first_appearance\": \"Detective Comics #225\",\n        \"characters\": \"Martian Manhunter\"\n    },\n    {\n        \"id\": \"dc-robin\",\n        \"superhero\": \"Robin/Nightwing\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Dick Grayson\",\n        \"first_appearance\": \"Detective Comics #38\",\n        \"characters\": \"Dick Grayson\"\n    },\n    {\n        \"id\": \"dc-blue\",\n        \"superhero\": \"Blue Beetle\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Dan Garret\",\n        \"first_appearance\": \"Mystery Men Comics #1\",\n        \"characters\": \"Dan Garret, Ted Kord, Jaime Reyes\"\n    },\n    {\n        \"id\": \"dc-black\",\n        \"superhero\": \"Black Canary\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Dinah Drake\",\n        \"first_appearance\": \"Flash Comics #86\",\n        \"characters\": \"Dinah Drake, Dinah Lance\"\n    },\n    {\n        \"id\": \"marvel-spider\",\n        \"superhero\": \"Spider Man\",\n        \"publisher\": \"Marvel Comics\",\n        \"alter_ego\": \"Peter Parker\",\n        \"first_appearance\": \"Amazing Fantasy #15\",\n        \"characters\": \"Peter Parker\"\n    },\n    {\n        \"id\": \"marvel-captain\",\n        \"superhero\": \"Captain America\",\n        \"publisher\": \"Marvel Comics\",\n        \"alter_ego\": \"Steve Rogers\",\n        \"first_appearance\": \"Captain America Comics #1\",\n        \"characters\": \"Steve Rogers\"\n    },\n    {\n        \"id\": \"marvel-iron\",\n        \"superhero\": \"Iron Man\",\n        \"publisher\": \"Marvel Comics\",\n        \"alter_ego\": \"Tony Stark\",\n        \"first_appearance\": \"Tales of Suspense #39\",\n        \"characters\": \"Tony Stark\"\n    },\n    {\n        \"id\": \"marvel-thor\",\n        \"superhero\": \"Thor\",\n        \"publisher\": \"Marvel Comics\",\n        \"alter_ego\": \"Thor Odinson\",\n        \"first_appearance\": \"Journey into Myster #83\",\n        \"characters\": \"Thor Odinson\"\n    },\n    {\n        \"id\": \"marvel-hulk\",\n        \"superhero\": \"Hulk\",\n        \"publisher\": \"Marvel Comics\",\n        \"alter_ego\": \"Bruce Banner\",\n        \"first_appearance\": \"The Incredible Hulk #1\",\n        \"characters\": \"Bruce Banner\"\n    },\n    {\n        \"id\": \"marvel-wolverine\",\n        \"superhero\": \"Wolverine\",\n        \"publisher\": \"Marvel Comics\",\n        \"alter_ego\": \"James Howlett\",\n        \"first_appearance\": \"The Incredible Hulk #180\",\n        \"characters\": \"James Howlett\"\n    },\n    {\n        \"id\": \"marvel-daredevil\",\n        \"superhero\": \"Daredevil\",\n        \"publisher\": \"Marvel Comics\",\n        \"alter_ego\": \"Matthew Michael Murdock\",\n        \"first_appearance\": \"Daredevil #1\",\n        \"characters\": \"Matthew Michael Murdock\"\n    },\n    {\n        \"id\": \"marvel-hawkeye\",\n        \"superhero\": \"Hawkeye\",\n        \"publisher\": \"Marvel Comics\",\n        \"alter_ego\": \"Clinton Francis Barton\",\n        \"first_appearance\": \"Tales of Suspense #57\",\n        \"characters\": \"Clinton Francis Barton\"\n    },\n    {\n        \"id\": \"marvel-cyclops\",\n        \"superhero\": \"Cyclops\",\n        \"publisher\": \"Marvel Comics\",\n        \"alter_ego\": \"Scott Summers\",\n        \"first_appearance\": \"X-Men #1\",\n        \"characters\": \"Scott Summers\"\n    },\n    {\n        \"id\": \"marvel-silver\",\n        \"superhero\": \"Silver Surfer\",\n        \"publisher\": \"Marvel Comics\",\n        \"alter_ego\": \"Norrin Radd\",\n        \"first_appearance\": \"The Fantastic Four #48\",\n        \"characters\": \"Norrin Radd\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Heroe por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/heroes/dc-green",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"heroes",
+								"dc-green"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/heroes/dc-green",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"heroes",
+										"dc-green"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "269"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10d-HmGm5oAyKrsjgrgWaf0XOpzC5go\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 27 Dec 2022 01:12:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"dc-green\",\n    \"superhero\": \"Green Lantern\",\n    \"publisher\": \"DC Comics\",\n    \"alter_ego\": \"Alan Scott\",\n    \"first_appearance\": \"All-American Comics #16\",\n    \"characters\": \"Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Listado sugerencias heroes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/heroes/?q=b&_limit=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"heroes",
+								""
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "b"
+								},
+								{
+									"key": "_limit",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/heroes/?q=b&_limit=6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"heroes",
+										""
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "b"
+										},
+										{
+											"key": "_limit",
+											"value": "6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Total-Count",
+									"value": "9"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "X-Total-Count"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"55d-W6CxxfXVWbssISSaA+GrfSQWsc8\""
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 Dec 2022 00:01:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"dc-batman\",\n        \"superhero\": \"Batman\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Bruce Wayne\",\n        \"first_appearance\": \"Detective Comics #27\",\n        \"characters\": \"Bruce Wayne\"\n    },\n    {\n        \"id\": \"dc-flash\",\n        \"superhero\": \"Flash\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Jay Garrick\",\n        \"first_appearance\": \"Flash Comics #1\",\n        \"characters\": \"Jay Garrick, Barry Allen, Wally West, Bart Allen\"\n    },\n    {\n        \"id\": \"dc-green\",\n        \"superhero\": \"Green Lantern\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Alan Scott\",\n        \"first_appearance\": \"All-American Comics #16\",\n        \"characters\": \"Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz\"\n    },\n    {\n        \"id\": \"dc-robin\",\n        \"superhero\": \"Robin/Nightwing\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Dick Grayson\",\n        \"first_appearance\": \"Detective Comics #38\",\n        \"characters\": \"Dick Grayson\"\n    },\n    {\n        \"id\": \"dc-blue\",\n        \"superhero\": \"Blue Beetle\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Dan Garret\",\n        \"first_appearance\": \"Mystery Men Comics #1\",\n        \"characters\": \"Dan Garret, Ted Kord, Jaime Reyes\"\n    },\n    {\n        \"id\": \"dc-black\",\n        \"superhero\": \"Black Canary\",\n        \"publisher\": \"DC Comics\",\n        \"alter_ego\": \"Dinah Drake\",\n        \"first_appearance\": \"Flash Comics #86\",\n        \"characters\": \"Dinah Drake, Dinah Lance\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Crear heroe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "superhero",
+									"value": "SuperCarlos",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "DC Comics",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/heroes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"heroes",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "superhero",
+											"value": "SuperCarlos",
+											"type": "text"
+										},
+										{
+											"key": "publisher",
+											"value": "DC Comics",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/heroes/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"heroes",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "Access-Control-Expose-Headers",
+									"value": "Location"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:3000/heroes//8lGcw2b"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4f-w3/GE665iMeNiABDr9PB8nwnit4\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 Dec 2022 00:27:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"superhero\": \"SuperCarlos\",\n    \"publisher\": \"DC Comics\",\n    \"id\": \"8lGcw2b\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Editar heroe",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "superhero",
+									"value": "SuperCarlos2",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "DC Comics",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/heroes/8lGcw2b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"heroes",
+								"8lGcw2b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "superhero",
+											"value": "SuperCarlos2",
+											"type": "text"
+										},
+										{
+											"key": "publisher",
+											"value": "DC Comics",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/heroes/8lGcw2b",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"heroes",
+										"8lGcw2b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin, Accept-Encoding"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "-1"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"50-GwCXIzZDBlvYBW279HHN7EpnT9U\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 Dec 2022 00:32:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"superhero\": \"SuperCarlos2\",\n    \"publisher\": \"DC Comics\",\n    \"id\": \"8lGcw2b\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Borrar heroe",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/heroes/8lGcw2b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"heroes",
+								"8lGcw2b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/heroes/sIx7tax",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"heroes",
+										"sIx7tax"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Get Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/usuarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/usuarios/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"usuarios",
+										"1"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
